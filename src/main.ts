@@ -3,8 +3,6 @@ import App from "./App.vue";
 import "@/assets/scss/index.scss";
 import router from "@/router/index.ts";
 import { createPinia } from "pinia";
-// 指令
-import directive from "@/directive/index.ts";
 // 二次封装naive-ui组件批量引入
 import initC from "./components/naive-ui";
 // svg 组件
@@ -20,7 +18,6 @@ const pinia = createPinia();
 const app = createApp(App);
 
 initC(app);
-app.use(directive);
 app.use(pinia);
 app.use(router);
 app.use(Viewer);

@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppLink: typeof import('./src/components/AppLink.vue')['default']
     CopyRight: typeof import('./src/components/CopyRight.vue')['default']
+    Demo: typeof import('./src/components/Demo.vue')['default']
     Echarts: typeof import('./src/components/Echarts.vue')['default']
     ImgCutter: typeof import('./src/components/ImgCutter.vue')['default']
     ImgUpload: typeof import('./src/components/ImgUpload.vue')['default']
